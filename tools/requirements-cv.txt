@@ -1,0 +1,32 @@
+# Tested together on 2026-09-28 (Python 3.12.14, Windows 11, CPU). Install torch/torchvision from the
+# PyTorch index first (CPU build shown; use the CUDA index on a GPU machine), then the rest.
+#   pip install torch==2.14.0 torchvision==0.29.0 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-cv.txt
+timm==1.0.30
+transformers==5.17.0
+open_clip_torch==3.3.0
+segmentation-models-pytorch==0.5.0
+scikit-learn==1.9.1
+scikit-image==0.26.0
+scipy==1.18.1
+numpy==2.5.2
+pandas==3.0.6
+pillow==12.3.0
+opencv-python-headless==5.0.0.93
+imagehash==4.3.2
+cleanlab==2.9.0
+pycocotools==2.0.11
+optuna==5.0.0
+onnx==1.23.0
+onnxruntime==1.30.0
+# albumentations: keep the MIT 2.0.8; its successor 'albumentationsx' is AGPL/commercial and uses the same import name
+albumentations==2.0.8
+kornia==0.8.3
+grad-cam==1.5.7
+torchmetrics==1.9.0
+ensemble-boxes==1.0.9
+iterative-stratification==0.1.9
+huggingface_hub==1.33.0
+safetensors==0.8.0
+matplotlib==3.11.2
+pyarrow==25.0.1

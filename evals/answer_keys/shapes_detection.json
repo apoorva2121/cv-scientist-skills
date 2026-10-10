@@ -1,0 +1,41 @@
+{
+ "planted": {
+  "out_of_bounds_boxes": 124,
+  "zero_area_boxes": 41,
+  "duplicate_boxes": 83,
+  "undefined_category_id_7": 3,
+  "declared_unused_category": "cross (id 4)",
+  "xyxy_instead_of_xywh_images": 20,
+  "missing_annotations_objects": 50,
+  "images_in_json_missing_on_disk": [
+   "seq024_f02.png",
+   "seq131_f07.png",
+   "seq116_f03.png",
+   "seq105_f03.png",
+   "seq147_f06.png"
+  ],
+  "wrong_width_height_in_json": [
+   "seq039_f06.png",
+   "seq129_f03.png",
+   "seq088_f06.png",
+   "seq054_f07.png",
+   "seq056_f02.png"
+  ]
+ },
+ "final_detectable": {
+  "boxes_beyond_json_image_size": 101,
+  "zero_or_negative_size_boxes": 37,
+  "undefined_category_annotations": 3,
+  "json_images_missing_on_disk": 5,
+  "json_size_mismatch": 5,
+  "near_duplicate_box_pairs_iou_gt_0.9": 83
+ },
+ "task": "object detection, 3 real classes (circle, square, triangle)",
+ "n_images": 1200,
+ "n_annotations": 4177,
+ "group_key": "sequence prefix in file_name (seqNNN): 8 near-identical consecutive frames; random splits leak",
+ "rare_class": "triangle (~15% of objects)",
+ "tiny_object_share_clean": 0.149,
+ "high_res_share": "~12% of images are 320px with the same object sizes (small relative size)",
+ "clean_annotations_file": "answer_keys/shapes_detection_clean.json"
+}

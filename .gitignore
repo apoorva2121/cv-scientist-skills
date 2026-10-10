@@ -1,0 +1,38 @@
+# ---- added for publication (2026-10-10) ----
+# --- credentials: never commit these ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+secrets.txt
+env.txt
+*.env.txt
+service-account*.json
+credentials.json
+local.properties
+# --- os / editor noise ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+# --- build output ---
+_build/
+site/
+*.tmp
+~$*
+
+# ---- eval working data and run outputs (gigabytes, all regenerable) ----
+# cv-workspace/ is 2.7GB of agent run outputs from the skill evaluations and
+# evals/{datasets,real,real_prepared} is 3.1GB of image data. Neither belongs in
+# git; evals/answer_keys/ IS kept, because the ground truth is what makes the
+# eval reproducible. See README for where to obtain the image sets.
+cv-workspace/
+evals/datasets/
+evals/real/
+evals/real_prepared/

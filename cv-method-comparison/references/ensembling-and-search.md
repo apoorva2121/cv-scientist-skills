@@ -1,0 +1,59 @@
+# Ensembling, distillation and hyperparameter search: inventory with evidence
+
+Source: research R5 (verified 2026-09-28; arXiv IDs checked through the arXiv API, APIs checked in the cv-skills environment). Cross-cutting findings, library status and unverified items: the cv-scientist skill's `references/library-status.md`. 
+
+### A8. Hyperparameter search and seed variance
+
+| Method | When it helps | When it hurts | Evidence | Library + verified API | Licence |
+|---|---|---|---|---|---|
+| **TPE (Optuna default)** | Mixed and conditional spaces with tens to hundreds of trials. In Optuna 5.0, `TPESampler` "now enables multivariate TPE and constant liar strategy by default" (release notes) | Fewer than about `n_startup_trials=10` trials is effectively random search | Optuna arXiv 1907.10902 (v1 2019-07-25); TPE components arXiv 2304.11127 (v1 2023-04-21) | optuna 5.0.0 (2026-09-07): `TPESampler(*, n_startup_trials=10, n_ei_candidates=24, seed=None, multivariate=None, group=False, constant_liar=True, ...)`; `optuna.create_study(*, storage=None, sampler=None, pruner=None, direction=None, ...)`. Samplers: `TPESampler`, `GPSampler` (stable in 5.0), `CmaEsSampler`, `NSGAIISampler`, `NSGAIIISampler`, `QMCSampler`, `RandomSampler`, `GridSampler`, `BruteForceSampler`, `PartialFixedSampler` | MIT |
+| **Hyperband / ASHA / successive halving (pruning)** | Many cheap configurations with learning curves (epochs as the resource) | Early rankings flip for fine-tuning with warmup, or when LR schedules differ in length (reasoning). Needs intermediate `trial.report` / `should_prune` | arXiv 1603.06560 (v1 2016-03-21); arXiv 1810.05934 (v1 2018-10-13) | Optuna pruners: `HyperbandPruner(min_resource=1, max_resource="auto", reduction_factor=3, bootstrap_count=0)`, `SuccessiveHalvingPruner`, `MedianPruner`, `PercentilePruner`, `PatientPruner`, `ThresholdPruner`, `WilcoxonPruner`. Ray Tune (ray 2.58.0): `ASHAScheduler`, `HyperBandScheduler`, `HyperBandForBOHB` | MIT / Apache-2.0 |
+| **Population-based training (PBT)** | Many parallel workers, and schedules that should adapt mid-run | Needs parallel compute; hard to reproduce | arXiv 1711.09846 (v1 2017-11-27) | Ray Tune `PopulationBasedTraining`, `PB2` (names from `tune/schedulers/__init__.py`) | Apache-2.0 |
+| **Tune the plain baseline** (LR, weight decay, batch size on a separate validation split) | Always first. It beat all but one of eight specialised data-efficient methods | - | arXiv 2108.13122 (v1 2021-08-30) | - | - |
+| **Seeds and repeated runs** | Deciding whether a change is real | Single-seed comparisons: "it is surprisingly easy to find an outlier that performs much better or much worse than the average" | arXiv 2109.08203 (v1 2021-09-16); test-set versus distribution variance arXiv 2304.01910 (v1 2023-04-04); variance sources and cheaper estimators (randomise more sources: 51x compute reduction) arXiv 2103.03098 (v1 2021-03-01); fine-tuning seeds (NLP): init and data order contribute comparably, and many small-data runs diverge, arXiv 2002.06305 (v1 2020-02-15) | `seed` arguments; `torch.use_deterministic_algorithms(True)` for bit-reproducibility (practice) | - |
+| **Guard against overtuning** | Heavy HPO on small validation sets | In about 10% of cases, HPO selects a configuration worse than the default or first one tried | arXiv 2506.19540 (v1 2025-06-24) | - | - |
+
+**How many trials.** Random search with n trials hits the top q fraction of the space with probability 1 - (1 - q)^n. For q = 5%, n = 59 gives 95.2% (computed). Beyond roughly 30-60 trials on a small validation set, gains are mostly selection noise (see overtuning), unless the validation set is large or repeated CV is used (reasoning plus arXiv 2506.19540).
+
+**Decision guidance (A8)**
+1. Search LR (log scale), weight decay, epochs and augmentation strength first; the rest later.
+2. Use TPE with the Optuna 5 defaults and a pruner only when epochs are the resource and learning curves are comparable.
+3. Re-run the top 2-3 configurations with 3 or more seeds, and compare them paired, on the same folds and the same seeds (D2).
+4. Never tune on the test set; freeze the search before the final evaluation.
+
+### C1. Ensembles
+
+| Method | When it helps | When it hurts | Evidence | Library + verified API | Licence |
+|---|---|---|---|---|---|
+| **Deep ensembles** (independent runs; average probabilities) | Accuracy and predictive uncertainty. Often matches the performance of an individual larger model | Costs M times the inference. "A single (but larger) neural network can replicate" the uncertainty and robustness benefits, and OOD gains track in-distribution gains | arXiv 1612.01474 (v1 2016-12-05); arXiv 2202.06985 (v1 2022-02-14); loss-landscape diversity arXiv 1912.02757 (v1 2019-12-05) | Average softmax probabilities (not logits of differently calibrated models; reasoning) | - |
+| **Snapshot ensembles / FGE** (one training run) | Near-free members from cyclic LR | Many "sophisticated ensembling techniques are equivalent to an ensemble of only few independently trained networks" (deep ensemble equivalent) | arXiv 1704.00109 (v1 2017-04-01); arXiv 1802.10026 (v1 2018-02-27); arXiv 2002.06470 (v1 2020-02-15) | `CosineAnnealingWarmRestarts` plus checkpoint saving | permissive |
+| **Ensembles of fine-tunes from one pretrained checkpoint** | Cheap diversity from seeds and hyperparameters; StarSSE explores the basin better | They stay in the same "pre-train basin" with "limited diversity"; leaving the basin loses the benefit of transfer | arXiv 2303.03374 (v1 2023-03-06) | - | - |
+| **Multi-backbone / multi-pretraining ensembles** | The largest gains: pre-training "is a performant source of diversity" (VTAB, 19 tasks, rank candidates by nearest-neighbour accuracy, greedy selection on validation cross-entropy). Two models with different training methods, each about 76.5% on ImageNet, ensemble to 83.4% | Heterogeneous preprocessing and licences (R3); latency | arXiv 2010.06866 (v1 2020-10-14); arXiv 2110.12899 (v1 2021-10-20) | timm / open_clip models (R3) | varies |
+| **Cascades / committees** (cost-aware) | Same accuracy, lower cost: an EfficientNet cascade is 5.4x faster than B7, and a ViT cascade 2.3x faster than ViT-L-384 | Needs a confidence threshold chosen on validation | arXiv 2012.01988 (v1 2020-12-03) | Threshold on MSP (B5) | - |
+| **Caruana ensemble selection** (forward stepwise selection with replacement from a model library, optimising the target metric on validation) | Many candidate models; directly optimises the metric (accuracy, cross-entropy, ROC area) | Overfits a small validation set (reasoning); use out-of-fold predictions | Caruana et al., ICML 2004, DOI 10.1145/1015330.1015432 (verified via ACM and ML Anthology) | About 20 lines of code | - |
+| **Stacking** (meta-model on out-of-fold predictions) | Members with complementary errors and enough out-of-fold data | Must beat "recalibrate the best single model" (the project's `ensemble.py` `recal` baseline explained 0.39 of stacking's 0.42 gain on near-chance models: STATUS.md). Leaks if the meta-features are not out-of-fold and group-aware | (no verified vision study; practice) | sklearn `LogisticRegression` on OOF probabilities; group-aware cross-fitting | BSD-3 |
+| **Weight averaging of diverse fine-tunes (DiWA, ratatouille)** | OOD generalisation with a single model's inference cost | Needs a shared initialisation (same as soups) | arXiv 2205.09739 (v1 2022-05-19); arXiv 2212.10445 (v1 2022-12-20) | State-dict averaging | - |
+| **Detection and segmentation ensembles** | WBF for boxes; probability averaging for masks (B2) | See B2 pitfalls | arXiv 1910.13302 (v1 2019-10-29) | `ensemble-boxes` | MIT |
+
+**Measuring diversity and gain.** Report each member's score, the ensemble score, the pairwise error correlation or disagreement rate, and the **marginal gain of adding each member** under a paired bootstrap (D2) (practice). Add a member only if the paired CI of the gain excludes zero, or the gain is worth its latency. Ensembles change calibration (usually toward under-confidence; reasoning), so recalibrate after ensembling.
+
+### C2. Knowledge distillation into one model
+
+| Method | When it helps | When it hurts | Evidence | Library + verified API | Licence |
+|---|---|---|---|---|---|
+| **Logit KD (soft targets)** | Compressing a large model or an ensemble. Patient, consistent distillation with matching augmented views (R3) | Large teacher-student gaps: "larger models do not often make better teachers", which early-stopped teachers mitigate. A sequence of distillation steps (teacher assistants) did not fix this in Cho et al. | arXiv 1503.02531 (v1 2015-03-09); arXiv 1910.01348 (v1 2019-10-03); arXiv 1902.03393 (v1 2019-02-09); arXiv 2106.05237 (v1 2021-06-09) | timm `train.py --kd-model-name ... --kd-distill-type {logit,feature,token}` (R3) | Apache-2.0 |
+| **Does the student match the teacher?** | - | Often not: "a surprisingly large discrepancy between the predictive distributions of the teacher and the student, even in cases when the student has the capacity to perfectly match". Closer matching "paradoxically does not always lead to better student generalization" | arXiv 2106.05945 (v1 2021-06-10) | Measure top-1 agreement and KL between student and teacher on held-out data | - |
+| **DIST (relational KD) / DKD (decoupled KD)** | Strong teachers where exact KL matching "would disturb the training". DIST works for classification, detection and segmentation | Extra hyperparameters | arXiv 2205.10536 (v1 2022-05-21); arXiv 2203.08679 (v1 2022-03-16) | Official repos | varies |
+| **DeiT distillation token** | ViT students learning from a CNN teacher | Architecture change (extra token) | arXiv 2012.12877 (v1 2020-12-23) | timm `deit_*_distilled_*` models; `--kd-distill-type token` (R3) | Apache-2.0 |
+| **Ensemble distillation / distribution distillation** | One model that keeps the ensemble's accuracy and (with EnD²) its uncertainty decomposition | A standard KD student loses the ensemble's diversity information | arXiv 1905.00076 (v1 2019-04-30); theory arXiv 2012.09816 (v1 2020-12-17) | - | - |
+| **Self-distillation (born-again networks)** | A same-size student can beat its teacher | Extra training round | arXiv 1805.04770 (v1 2018-05-12) | - | - |
+| **Detection KD: feature imitation, localisation distillation (LD), FGD** | Distil where objects are (fine-grained imitation), box distributions (LD), focal and global feature relations (FGD) | Detector-specific plumbing | arXiv 1906.03609 (v1 2019-06-09); arXiv 2102.12252 (v1 2021-02-24); arXiv 2111.11837 (v1 2021-11-23) | Official repos; mmdet/mmrazor ecosystem (not verified) | varies |
+| **Segmentation KD: structured / channel-wise** | Dense prediction students (pairwise, holistic and channel distributions) | - | arXiv 1903.04197 (v1 2019-03-11); arXiv 2011.13256 (v1 2020-11-26) | Official repos | varies |
+| **Use unlabelled images for distillation** | Distilling on extra unlabelled in-domain images; SimCLRv2 distils a big fine-tuned model into a small one "with little loss" | Domain mismatch of the unlabelled pool | arXiv 2006.10029 (v1 2020-06-17) | - | - |
+
+**Decision guidance (C).**
+1. Build candidates that are diverse by construction: different pre-training (for example DINOv2 and SigLIP 2) and different architecture families.
+2. Average probabilities (classification, segmentation) or use WBF (detection).
+3. Select members greedily on out-of-fold or validation predictions, then compare against the best single model and against "recalibrated best single" with a paired bootstrap.
+4. If latency matters, distil the ensemble into one student using unlabelled or augmented in-domain images. Report the student-teacher agreement, and expect a gap.
+5. Keep label smoothing off the teacher (arXiv 1906.02629), unless labels are noisy (arXiv 2003.02819).

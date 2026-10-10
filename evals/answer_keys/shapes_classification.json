@@ -1,0 +1,1741 @@
+{
+ "planted": {
+  "near_duplicates": {
+   "count": 150,
+   "pairs": [
+    [
+     "img_01852.png",
+     "img_02896.jpg"
+    ],
+    [
+     "img_02292.png",
+     "img_02897.jpg"
+    ],
+    [
+     "img_01907.png",
+     "img_02898.jpg"
+    ],
+    [
+     "img_01850.png",
+     "img_02899.jpg"
+    ],
+    [
+     "img_02080.png",
+     "img_02900.jpg"
+    ],
+    [
+     "img_02405.png",
+     "img_02901.jpg"
+    ],
+    [
+     "img_00777.png",
+     "img_02902.jpg"
+    ],
+    [
+     "img_00756.png",
+     "img_02903.jpg"
+    ],
+    [
+     "img_02096.png",
+     "img_02904.jpg"
+    ],
+    [
+     "img_01948.png",
+     "img_02905.jpg"
+    ],
+    [
+     "img_02579.png",
+     "img_02906.jpg"
+    ],
+    [
+     "img_02514.png",
+     "img_02907.jpg"
+    ],
+    [
+     "img_00762.png",
+     "img_02908.jpg"
+    ],
+    [
+     "img_00385.png",
+     "img_02909.jpg"
+    ],
+    [
+     "img_01829.png",
+     "img_02910.jpg"
+    ],
+    [
+     "img_01242.png",
+     "img_02911.jpg"
+    ],
+    [
+     "img_00580.png",
+     "img_02912.jpg"
+    ],
+    [
+     "img_00371.png",
+     "img_02913.jpg"
+    ],
+    [
+     "img_02206.png",
+     "img_02914.jpg"
+    ],
+    [
+     "img_02840.png",
+     "img_02915.jpg"
+    ],
+    [
+     "img_02598.png",
+     "img_02916.jpg"
+    ],
+    [
+     "img_00171.png",
+     "img_02917.jpg"
+    ],
+    [
+     "img_02438.png",
+     "img_02918.jpg"
+    ],
+    [
+     "img_01622.png",
+     "img_02919.jpg"
+    ],
+    [
+     "img_01855.png",
+     "img_02920.jpg"
+    ],
+    [
+     "img_02678.png",
+     "img_02921.jpg"
+    ],
+    [
+     "img_02521.png",
+     "img_02922.jpg"
+    ],
+    [
+     "img_02662.png",
+     "img_02923.jpg"
+    ],
+    [
+     "img_00645.png",
+     "img_02924.jpg"
+    ],
+    [
+     "img_02552.png",
+     "img_02925.jpg"
+    ],
+    [
+     "img_00061.png",
+     "img_02926.jpg"
+    ],
+    [
+     "img_02164.png",
+     "img_02927.jpg"
+    ],
+    [
+     "img_00258.png",
+     "img_02928.jpg"
+    ],
+    [
+     "img_00243.png",
+     "img_02929.jpg"
+    ],
+    [
+     "img_00146.png",
+     "img_02930.jpg"
+    ],
+    [
+     "img_00779.png",
+     "img_02931.jpg"
+    ],
+    [
+     "img_00990.png",
+     "img_02932.jpg"
+    ],
+    [
+     "img_02456.png",
+     "img_02933.jpg"
+    ],
+    [
+     "img_00123.png",
+     "img_02934.jpg"
+    ],
+    [
+     "img_01900.png",
+     "img_02935.jpg"
+    ],
+    [
+     "img_01336.png",
+     "img_02936.jpg"
+    ],
+    [
+     "img_01804.png",
+     "img_02937.jpg"
+    ],
+    [
+     "img_02420.png",
+     "img_02938.jpg"
+    ],
+    [
+     "img_00800.png",
+     "img_02939.jpg"
+    ],
+    [
+     "img_02126.png",
+     "img_02940.jpg"
+    ],
+    [
+     "img_00957.png",
+     "img_02941.jpg"
+    ],
+    [
+     "img_02622.png",
+     "img_02942.jpg"
+    ],
+    [
+     "img_01204.png",
+     "img_02943.jpg"
+    ],
+    [
+     "img_02047.png",
+     "img_02944.jpg"
+    ],
+    [
+     "img_00018.png",
+     "img_02945.jpg"
+    ],
+    [
+     "img_02713.png",
+     "img_02946.jpg"
+    ],
+    [
+     "img_00348.png",
+     "img_02947.jpg"
+    ],
+    [
+     "img_01873.png",
+     "img_02948.jpg"
+    ],
+    [
+     "img_02682.png",
+     "img_02949.jpg"
+    ],
+    [
+     "img_01139.png",
+     "img_02950.jpg"
+    ],
+    [
+     "img_01666.png",
+     "img_02951.jpg"
+    ],
+    [
+     "img_02257.png",
+     "img_02952.jpg"
+    ],
+    [
+     "img_00340.png",
+     "img_02953.jpg"
+    ],
+    [
+     "img_01040.png",
+     "img_02954.jpg"
+    ],
+    [
+     "img_01291.png",
+     "img_02955.jpg"
+    ],
+    [
+     "img_00940.png",
+     "img_02956.jpg"
+    ],
+    [
+     "img_02100.png",
+     "img_02957.jpg"
+    ],
+    [
+     "img_01183.png",
+     "img_02958.jpg"
+    ],
+    [
+     "img_00121.png",
+     "img_02959.jpg"
+    ],
+    [
+     "img_00287.png",
+     "img_02960.jpg"
+    ],
+    [
+     "img_02306.png",
+     "img_02961.jpg"
+    ],
+    [
+     "img_00442.png",
+     "img_02962.jpg"
+    ],
+    [
+     "img_01640.png",
+     "img_02963.jpg"
+    ],
+    [
+     "img_00441.png",
+     "img_02964.jpg"
+    ],
+    [
+     "img_01191.png",
+     "img_02965.jpg"
+    ],
+    [
+     "img_01583.png",
+     "img_02966.jpg"
+    ],
+    [
+     "img_00273.png",
+     "img_02967.jpg"
+    ],
+    [
+     "img_00069.png",
+     "img_02968.jpg"
+    ],
+    [
+     "img_02805.png",
+     "img_02969.jpg"
+    ],
+    [
+     "img_00002.png",
+     "img_02970.jpg"
+    ],
+    [
+     "img_00874.png",
+     "img_02971.jpg"
+    ],
+    [
+     "img_00859.png",
+     "img_02972.jpg"
+    ],
+    [
+     "img_00214.png",
+     "img_02973.jpg"
+    ],
+    [
+     "img_01925.png",
+     "img_02974.jpg"
+    ],
+    [
+     "img_01537.png",
+     "img_02975.jpg"
+    ],
+    [
+     "img_01627.png",
+     "img_02976.jpg"
+    ],
+    [
+     "img_01719.png",
+     "img_02977.jpg"
+    ],
+    [
+     "img_00299.png",
+     "img_02978.jpg"
+    ],
+    [
+     "img_02319.png",
+     "img_02979.jpg"
+    ],
+    [
+     "img_02578.png",
+     "img_02980.jpg"
+    ],
+    [
+     "img_00813.png",
+     "img_02981.jpg"
+    ],
+    [
+     "img_02764.png",
+     "img_02982.jpg"
+    ],
+    [
+     "img_01105.png",
+     "img_02983.jpg"
+    ],
+    [
+     "img_01379.png",
+     "img_02984.jpg"
+    ],
+    [
+     "img_00356.png",
+     "img_02985.jpg"
+    ],
+    [
+     "img_01274.png",
+     "img_02986.jpg"
+    ],
+    [
+     "img_01362.png",
+     "img_02987.jpg"
+    ],
+    [
+     "img_00062.png",
+     "img_02988.jpg"
+    ],
+    [
+     "img_01679.png",
+     "img_02989.jpg"
+    ],
+    [
+     "img_00483.png",
+     "img_02990.jpg"
+    ],
+    [
+     "img_00551.png",
+     "img_02991.jpg"
+    ],
+    [
+     "img_01009.png",
+     "img_02992.jpg"
+    ],
+    [
+     "img_02895.png",
+     "img_02993.jpg"
+    ],
+    [
+     "img_00413.png",
+     "img_02994.jpg"
+    ],
+    [
+     "img_00044.png",
+     "img_02995.jpg"
+    ],
+    [
+     "img_00245.png",
+     "img_02996.jpg"
+    ],
+    [
+     "img_01904.png",
+     "img_02997.jpg"
+    ],
+    [
+     "img_01994.png",
+     "img_02998.jpg"
+    ],
+    [
+     "img_00727.png",
+     "img_02999.jpg"
+    ],
+    [
+     "img_02793.png",
+     "img_03000.jpg"
+    ],
+    [
+     "img_02290.png",
+     "img_03001.jpg"
+    ],
+    [
+     "img_00771.png",
+     "img_03002.jpg"
+    ],
+    [
+     "img_01832.png",
+     "img_03003.jpg"
+    ],
+    [
+     "img_02084.png",
+     "img_03004.jpg"
+    ],
+    [
+     "img_00781.png",
+     "img_03005.jpg"
+    ],
+    [
+     "img_00536.png",
+     "img_03006.jpg"
+    ],
+    [
+     "img_01717.png",
+     "img_03007.jpg"
+    ],
+    [
+     "img_02636.png",
+     "img_03008.jpg"
+    ],
+    [
+     "img_01571.png",
+     "img_03009.jpg"
+    ],
+    [
+     "img_00477.png",
+     "img_03010.jpg"
+    ],
+    [
+     "img_01617.png",
+     "img_03011.jpg"
+    ],
+    [
+     "img_01723.png",
+     "img_03012.jpg"
+    ],
+    [
+     "img_00871.png",
+     "img_03013.jpg"
+    ],
+    [
+     "img_00001.png",
+     "img_03014.jpg"
+    ],
+    [
+     "img_02427.png",
+     "img_03015.jpg"
+    ],
+    [
+     "img_01245.png",
+     "img_03016.jpg"
+    ],
+    [
+     "img_00080.png",
+     "img_03017.jpg"
+    ],
+    [
+     "img_00863.png",
+     "img_03018.jpg"
+    ],
+    [
+     "img_00767.png",
+     "img_03019.jpg"
+    ],
+    [
+     "img_01614.png",
+     "img_03020.jpg"
+    ],
+    [
+     "img_02465.png",
+     "img_03021.jpg"
+    ],
+    [
+     "img_02628.png",
+     "img_03022.jpg"
+    ],
+    [
+     "img_02363.png",
+     "img_03023.jpg"
+    ],
+    [
+     "img_00410.png",
+     "img_03024.jpg"
+    ],
+    [
+     "img_00172.png",
+     "img_03025.jpg"
+    ],
+    [
+     "img_00599.png",
+     "img_03026.jpg"
+    ],
+    [
+     "img_00873.png",
+     "img_03027.jpg"
+    ],
+    [
+     "img_01808.png",
+     "img_03028.jpg"
+    ],
+    [
+     "img_01057.png",
+     "img_03029.jpg"
+    ],
+    [
+     "img_00039.png",
+     "img_03030.jpg"
+    ],
+    [
+     "img_02499.png",
+     "img_03031.jpg"
+    ],
+    [
+     "img_01347.png",
+     "img_03032.jpg"
+    ],
+    [
+     "img_01213.png",
+     "img_03033.jpg"
+    ],
+    [
+     "img_01581.png",
+     "img_03034.jpg"
+    ],
+    [
+     "img_00300.png",
+     "img_03035.jpg"
+    ],
+    [
+     "img_00304.png",
+     "img_03036.jpg"
+    ],
+    [
+     "img_00369.png",
+     "img_03037.jpg"
+    ],
+    [
+     "img_00854.png",
+     "img_03038.jpg"
+    ],
+    [
+     "img_02386.png",
+     "img_03039.jpg"
+    ],
+    [
+     "img_02607.png",
+     "img_03040.jpg"
+    ],
+    [
+     "img_00995.png",
+     "img_03041.jpg"
+    ],
+    [
+     "img_00063.png",
+     "img_03042.jpg"
+    ],
+    [
+     "img_02462.png",
+     "img_03043.jpg"
+    ],
+    [
+     "img_01510.png",
+     "img_03044.jpg"
+    ],
+    [
+     "img_01522.png",
+     "img_03045.jpg"
+    ]
+   ],
+   "note": "re-uploaded with new session ids; slight crop, resize, JPEG"
+  },
+  "exact_duplicates": {
+   "count": 40,
+   "pairs": [
+    [
+     "img_02548.png",
+     "img_03046.png"
+    ],
+    [
+     "img_01856.png",
+     "img_03047.png"
+    ],
+    [
+     "img_00521.png",
+     "img_03048.png"
+    ],
+    [
+     "img_02405.png",
+     "img_03049.png"
+    ],
+    [
+     "img_01981.png",
+     "img_03050.png"
+    ],
+    [
+     "img_02353.png",
+     "img_03051.png"
+    ],
+    [
+     "img_00555.png",
+     "img_03052.png"
+    ],
+    [
+     "img_01581.png",
+     "img_03053.png"
+    ],
+    [
+     "img_00748.png",
+     "img_03054.png"
+    ],
+    [
+     "img_02569.png",
+     "img_03055.png"
+    ],
+    [
+     "img_00631.png",
+     "img_03056.png"
+    ],
+    [
+     "img_01273.png",
+     "img_03057.png"
+    ],
+    [
+     "img_00935.png",
+     "img_03058.png"
+    ],
+    [
+     "img_02500.png",
+     "img_03059.png"
+    ],
+    [
+     "img_01021.png",
+     "img_03060.png"
+    ],
+    [
+     "img_00777.png",
+     "img_03061.png"
+    ],
+    [
+     "img_00649.png",
+     "img_03062.png"
+    ],
+    [
+     "img_02576.png",
+     "img_03063.png"
+    ],
+    [
+     "img_02268.png",
+     "img_03064.png"
+    ],
+    [
+     "img_00805.png",
+     "img_03065.png"
+    ],
+    [
+     "img_02813.png",
+     "img_03066.png"
+    ],
+    [
+     "img_01590.png",
+     "img_03067.png"
+    ],
+    [
+     "img_01976.png",
+     "img_03068.png"
+    ],
+    [
+     "img_02472.png",
+     "img_03069.png"
+    ],
+    [
+     "img_00321.png",
+     "img_03070.png"
+    ],
+    [
+     "img_01726.png",
+     "img_03071.png"
+    ],
+    [
+     "img_00194.png",
+     "img_03072.png"
+    ],
+    [
+     "img_00425.png",
+     "img_03073.png"
+    ],
+    [
+     "img_00446.png",
+     "img_03074.png"
+    ],
+    [
+     "img_00158.png",
+     "img_03075.png"
+    ],
+    [
+     "img_02098.png",
+     "img_03076.png"
+    ],
+    [
+     "img_01045.png",
+     "img_03077.png"
+    ],
+    [
+     "img_00976.png",
+     "img_03078.png"
+    ],
+    [
+     "img_02885.png",
+     "img_03079.png"
+    ],
+    [
+     "img_01604.png",
+     "img_03080.png"
+    ],
+    [
+     "img_01052.png",
+     "img_03081.png"
+    ],
+    [
+     "img_01723.png",
+     "img_03082.png"
+    ],
+    [
+     "img_02443.png",
+     "img_03083.png"
+    ],
+    [
+     "img_02011.png",
+     "img_03084.png"
+    ],
+    [
+     "img_01201.png",
+     "img_03085.png"
+    ]
+   ],
+   "conflicting_labels": [
+    [
+     "img_02548.png",
+     "img_03046.png"
+    ],
+    [
+     "img_01856.png",
+     "img_03047.png"
+    ],
+    [
+     "img_00521.png",
+     "img_03048.png"
+    ],
+    [
+     "img_02405.png",
+     "img_03049.png"
+    ],
+    [
+     "img_01981.png",
+     "img_03050.png"
+    ],
+    [
+     "img_02353.png",
+     "img_03051.png"
+    ],
+    [
+     "img_00555.png",
+     "img_03052.png"
+    ],
+    [
+     "img_01581.png",
+     "img_03053.png"
+    ],
+    [
+     "img_00748.png",
+     "img_03054.png"
+    ],
+    [
+     "img_02569.png",
+     "img_03055.png"
+    ],
+    [
+     "img_00631.png",
+     "img_03056.png"
+    ],
+    [
+     "img_01273.png",
+     "img_03057.png"
+    ],
+    [
+     "img_00935.png",
+     "img_03058.png"
+    ],
+    [
+     "img_02500.png",
+     "img_03059.png"
+    ],
+    [
+     "img_01021.png",
+     "img_03060.png"
+    ]
+   ]
+  },
+  "label_noise": {
+   "count": 115,
+   "flips": [
+    {
+     "file": "img_01102.png",
+     "true": "circle",
+     "given": "cross"
+    },
+    {
+     "file": "img_01685.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_01825.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_01020.png",
+     "true": "circle",
+     "given": "cross"
+    },
+    {
+     "file": "img_00247.png",
+     "true": "cross",
+     "given": "square"
+    },
+    {
+     "file": "img_00190.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00721.png",
+     "true": "square",
+     "given": "star"
+    },
+    {
+     "file": "img_01154.png",
+     "true": "cross",
+     "given": "square"
+    },
+    {
+     "file": "img_01510.png",
+     "true": "triangle",
+     "given": "square"
+    },
+    {
+     "file": "img_02174.png",
+     "true": "triangle",
+     "given": "square"
+    },
+    {
+     "file": "img_02343.png",
+     "true": "square",
+     "given": "cross"
+    },
+    {
+     "file": "img_00538.png",
+     "true": "triangle",
+     "given": "star"
+    },
+    {
+     "file": "img_00377.png",
+     "true": "square",
+     "given": "circle"
+    },
+    {
+     "file": "img_01483.png",
+     "true": "triangle",
+     "given": "circle"
+    },
+    {
+     "file": "img_00566.png",
+     "true": "triangle",
+     "given": "star"
+    },
+    {
+     "file": "img_01844.png",
+     "true": "square",
+     "given": "triangle"
+    },
+    {
+     "file": "img_01355.png",
+     "true": "circle",
+     "given": "square"
+    },
+    {
+     "file": "img_02690.png",
+     "true": "square",
+     "given": "cross"
+    },
+    {
+     "file": "img_02831.png",
+     "true": "triangle",
+     "given": "cross"
+    },
+    {
+     "file": "img_02137.png",
+     "true": "cross",
+     "given": "triangle"
+    },
+    {
+     "file": "img_02393.png",
+     "true": "star",
+     "given": "square"
+    },
+    {
+     "file": "img_00574.png",
+     "true": "square",
+     "given": "cross"
+    },
+    {
+     "file": "img_02416.png",
+     "true": "circle",
+     "given": "cross"
+    },
+    {
+     "file": "img_00143.png",
+     "true": "circle",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00073.png",
+     "true": "hexagon",
+     "given": "star"
+    },
+    {
+     "file": "img_01944.png",
+     "true": "circle",
+     "given": "star"
+    },
+    {
+     "file": "img_01464.png",
+     "true": "star",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_02871.png",
+     "true": "circle",
+     "given": "cross"
+    },
+    {
+     "file": "img_01277.png",
+     "true": "triangle",
+     "given": "star"
+    },
+    {
+     "file": "img_00137.png",
+     "true": "triangle",
+     "given": "circle"
+    },
+    {
+     "file": "img_00087.png",
+     "true": "cross",
+     "given": "circle"
+    },
+    {
+     "file": "img_02450.png",
+     "true": "star",
+     "given": "triangle"
+    },
+    {
+     "file": "img_02605.png",
+     "true": "cross",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00306.png",
+     "true": "triangle",
+     "given": "circle"
+    },
+    {
+     "file": "img_01975.png",
+     "true": "cross",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00275.png",
+     "true": "hexagon",
+     "given": "cross"
+    },
+    {
+     "file": "img_01274.png",
+     "true": "square",
+     "given": "star"
+    },
+    {
+     "file": "img_01306.png",
+     "true": "star",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00559.png",
+     "true": "triangle",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00296.png",
+     "true": "triangle",
+     "given": "circle"
+    },
+    {
+     "file": "img_00308.png",
+     "true": "triangle",
+     "given": "square"
+    },
+    {
+     "file": "img_01855.png",
+     "true": "triangle",
+     "given": "cross"
+    },
+    {
+     "file": "img_02236.png",
+     "true": "triangle",
+     "given": "cross"
+    },
+    {
+     "file": "img_01506.png",
+     "true": "square",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00182.png",
+     "true": "star",
+     "given": "circle"
+    },
+    {
+     "file": "img_02882.png",
+     "true": "cross",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00530.png",
+     "true": "cross",
+     "given": "square"
+    },
+    {
+     "file": "img_01399.png",
+     "true": "star",
+     "given": "square"
+    },
+    {
+     "file": "img_01441.png",
+     "true": "star",
+     "given": "circle"
+    },
+    {
+     "file": "img_00347.png",
+     "true": "triangle",
+     "given": "circle"
+    },
+    {
+     "file": "img_02806.png",
+     "true": "cross",
+     "given": "star"
+    },
+    {
+     "file": "img_01938.png",
+     "true": "cross",
+     "given": "circle"
+    },
+    {
+     "file": "img_00318.png",
+     "true": "star",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_01708.png",
+     "true": "star",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00123.png",
+     "true": "square",
+     "given": "circle"
+    },
+    {
+     "file": "img_02047.png",
+     "true": "triangle",
+     "given": "square"
+    },
+    {
+     "file": "img_02346.png",
+     "true": "triangle",
+     "given": "square"
+    },
+    {
+     "file": "img_00059.png",
+     "true": "star",
+     "given": "cross"
+    },
+    {
+     "file": "img_02559.png",
+     "true": "star",
+     "given": "triangle"
+    },
+    {
+     "file": "img_02712.png",
+     "true": "star",
+     "given": "square"
+    },
+    {
+     "file": "img_01566.png",
+     "true": "circle",
+     "given": "square"
+    },
+    {
+     "file": "img_01553.png",
+     "true": "hexagon",
+     "given": "star"
+    },
+    {
+     "file": "img_02386.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00050.png",
+     "true": "square",
+     "given": "circle"
+    },
+    {
+     "file": "img_02493.png",
+     "true": "triangle",
+     "given": "square"
+    },
+    {
+     "file": "img_00295.png",
+     "true": "triangle",
+     "given": "square"
+    },
+    {
+     "file": "img_00328.png",
+     "true": "star",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00371.png",
+     "true": "star",
+     "given": "triangle"
+    },
+    {
+     "file": "img_02619.png",
+     "true": "cross",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00473.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_01053.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_01704.png",
+     "true": "cross",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_01352.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_01591.png",
+     "true": "cross",
+     "given": "star"
+    },
+    {
+     "file": "img_02843.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_02379.png",
+     "true": "star",
+     "given": "circle"
+    },
+    {
+     "file": "img_01874.png",
+     "true": "cross",
+     "given": "star"
+    },
+    {
+     "file": "img_01804.png",
+     "true": "triangle",
+     "given": "cross"
+    },
+    {
+     "file": "img_01894.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_02216.png",
+     "true": "star",
+     "given": "cross"
+    },
+    {
+     "file": "img_00343.png",
+     "true": "square",
+     "given": "cross"
+    },
+    {
+     "file": "img_02124.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_02107.png",
+     "true": "circle",
+     "given": "square"
+    },
+    {
+     "file": "img_00122.png",
+     "true": "star",
+     "given": "cross"
+    },
+    {
+     "file": "img_01270.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_02462.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00359.png",
+     "true": "cross",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_01969.png",
+     "true": "cross",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00091.png",
+     "true": "star",
+     "given": "cross"
+    },
+    {
+     "file": "img_00942.png",
+     "true": "triangle",
+     "given": "star"
+    },
+    {
+     "file": "img_02860.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00462.png",
+     "true": "circle",
+     "given": "square"
+    },
+    {
+     "file": "img_02036.png",
+     "true": "square",
+     "given": "circle"
+    },
+    {
+     "file": "img_02517.png",
+     "true": "star",
+     "given": "square"
+    },
+    {
+     "file": "img_02703.png",
+     "true": "circle",
+     "given": "triangle"
+    },
+    {
+     "file": "img_01991.png",
+     "true": "hexagon",
+     "given": "star"
+    },
+    {
+     "file": "img_01047.png",
+     "true": "star",
+     "given": "circle"
+    },
+    {
+     "file": "img_00046.png",
+     "true": "cross",
+     "given": "triangle"
+    },
+    {
+     "file": "img_01507.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_01233.png",
+     "true": "hexagon",
+     "given": "triangle"
+    },
+    {
+     "file": "img_00586.png",
+     "true": "circle",
+     "given": "star"
+    },
+    {
+     "file": "img_02777.png",
+     "true": "star",
+     "given": "circle"
+    },
+    {
+     "file": "img_02505.png",
+     "true": "square",
+     "given": "star"
+    },
+    {
+     "file": "img_00829.png",
+     "true": "cross",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_02123.png",
+     "true": "circle",
+     "given": "square"
+    },
+    {
+     "file": "img_00694.png",
+     "true": "star",
+     "given": "circle"
+    },
+    {
+     "file": "img_01402.png",
+     "true": "star",
+     "given": "cross"
+    },
+    {
+     "file": "img_01810.png",
+     "true": "square",
+     "given": "star"
+    },
+    {
+     "file": "img_02041.png",
+     "true": "square",
+     "given": "hexagon"
+    },
+    {
+     "file": "img_00989.png",
+     "true": "triangle",
+     "given": "cross"
+    },
+    {
+     "file": "img_01339.png",
+     "true": "star",
+     "given": "triangle"
+    },
+    {
+     "file": "img_01657.png",
+     "true": "square",
+     "given": "cross"
+    },
+    {
+     "file": "img_02727.png",
+     "true": "star",
+     "given": "circle"
+    },
+    {
+     "file": "img_01026.png",
+     "true": "star",
+     "given": "square"
+    },
+    {
+     "file": "img_00813.png",
+     "true": "cross",
+     "given": "circle"
+    }
+   ]
+  },
+  "grayscale": [
+   "img_01434.png",
+   "img_01357.png",
+   "img_01817.png",
+   "img_02575.png",
+   "img_00683.png",
+   "img_02552.png",
+   "img_01576.png",
+   "img_00179.png",
+   "img_00621.png",
+   "img_01755.png",
+   "img_00803.png",
+   "img_02578.png",
+   "img_00747.png",
+   "img_02726.png",
+   "img_00981.png",
+   "img_00583.png",
+   "img_00232.png",
+   "img_02384.png",
+   "img_00767.png",
+   "img_00353.png",
+   "img_02366.png",
+   "img_00013.png",
+   "img_01289.png",
+   "img_02858.png",
+   "img_00437.png",
+   "img_01424.png",
+   "img_00111.png",
+   "img_01319.png",
+   "img_02070.png",
+   "img_02439.png",
+   "img_00928.png",
+   "img_00990.png",
+   "img_02714.png",
+   "img_01554.png",
+   "img_02233.png",
+   "img_00025.png",
+   "img_01142.png",
+   "img_02464.png",
+   "img_02759.png",
+   "img_00524.png",
+   "img_01619.png",
+   "img_00002.png",
+   "img_01143.png",
+   "img_01544.png",
+   "img_01465.png",
+   "img_01214.png",
+   "img_00802.png",
+   "img_00184.png",
+   "img_01002.png",
+   "img_02161.png",
+   "img_00172.png",
+   "img_00464.png",
+   "img_00903.png",
+   "img_00728.png",
+   "img_02746.png",
+   "img_02219.png",
+   "img_01530.png",
+   "img_01361.png",
+   "img_02538.png",
+   "img_02627.png",
+   "img_01899.png",
+   "img_01512.png",
+   "img_01564.png",
+   "img_02305.png",
+   "img_02256.png",
+   "img_00346.png",
+   "img_02711.png",
+   "img_01473.png",
+   "img_00178.png",
+   "img_01947.png",
+   "img_02056.png",
+   "img_01227.png",
+   "img_02720.png",
+   "img_02327.png",
+   "img_01520.png",
+   "img_00487.png",
+   "img_01127.png",
+   "img_00644.png",
+   "img_00244.png",
+   "img_02841.png",
+   "img_02363.png",
+   "img_00449.png",
+   "img_01508.png",
+   "img_00795.png",
+   "img_02591.png",
+   "img_00174.png",
+   "img_00501.png",
+   "img_01963.png",
+   "img_01772.png",
+   "img_01073.png",
+   "img_00207.png",
+   "img_02532.png",
+   "img_02414.png",
+   "img_02516.png",
+   "img_00914.png",
+   "img_00534.png",
+   "img_00513.png",
+   "img_02411.png",
+   "img_02407.png",
+   "img_01439.png",
+   "img_00238.png",
+   "img_00686.png",
+   "img_01058.png",
+   "img_02824.png",
+   "img_02545.png",
+   "img_00026.png",
+   "img_01635.png",
+   "img_01328.png",
+   "img_00154.png",
+   "img_00646.png",
+   "img_01067.png",
+   "img_02891.png",
+   "img_00004.png",
+   "img_02465.png",
+   "img_00971.png",
+   "img_01216.png",
+   "img_02166.png",
+   "img_01136.png",
+   "img_02660.png",
+   "img_00219.png"
+  ],
+  "rgba": [
+   "img_01172.png",
+   "img_01263.png",
+   "img_01868.png",
+   "img_02592.png",
+   "img_00961.png",
+   "img_02169.png",
+   "img_01787.png",
+   "img_01964.png",
+   "img_01431.png",
+   "img_01504.png",
+   "img_00937.png",
+   "img_00333.png",
+   "img_02641.png",
+   "img_00018.png",
+   "img_00869.png",
+   "img_01168.png",
+   "img_00324.png",
+   "img_00035.png",
+   "img_01989.png",
+   "img_00011.png",
+   "img_00339.png",
+   "img_01711.png",
+   "img_00757.png",
+   "img_01151.png",
+   "img_01068.png",
+   "img_01302.png",
+   "img_01437.png",
+   "img_02058.png",
+   "img_01678.png",
+   "img_01283.png",
+   "img_00089.png",
+   "img_00794.png",
+   "img_02506.png",
+   "img_01223.png",
+   "img_00209.png",
+   "img_01213.png",
+   "img_00426.png",
+   "img_01806.png",
+   "img_01634.png",
+   "img_01831.png",
+   "img_01021.png",
+   "img_00387.png",
+   "img_00558.png",
+   "img_00975.png",
+   "img_01105.png",
+   "img_02223.png",
+   "img_01567.png",
+   "img_01730.png",
+   "img_02561.png",
+   "img_00724.png"
+  ],
+  "cmyk_jpeg": [
+   "img_00121.jpg",
+   "img_00067.jpg",
+   "img_00579.jpg",
+   "img_00277.jpg",
+   "img_00053.jpg",
+   "img_00282.jpg",
+   "img_01939.jpg",
+   "img_01114.jpg",
+   "img_01141.jpg",
+   "img_02369.jpg",
+   "img_01249.jpg",
+   "img_00183.jpg",
+   "img_00603.jpg",
+   "img_01089.jpg",
+   "img_02089.jpg"
+  ],
+  "exif_rotated": [
+   "img_00284.jpg",
+   "img_02691.jpg",
+   "img_02245.jpg",
+   "img_02136.jpg",
+   "img_02302.jpg",
+   "img_00731.jpg",
+   "img_02466.jpg",
+   "img_00952.jpg",
+   "img_00612.jpg",
+   "img_02254.jpg",
+   "img_00095.jpg",
+   "img_01805.jpg",
+   "img_01995.jpg",
+   "img_00279.jpg",
+   "img_02877.jpg",
+   "img_01965.jpg",
+   "img_01915.jpg",
+   "img_00000.jpg",
+   "img_02226.jpg",
+   "img_00181.jpg",
+   "img_02767.jpg",
+   "img_01560.jpg",
+   "img_02827.jpg",
+   "img_00329.jpg",
+   "img_02507.jpg",
+   "img_00623.jpg",
+   "img_00652.jpg",
+   "img_00496.jpg",
+   "img_02618.jpg",
+   "img_01847.jpg"
+  ],
+  "wrong_extension_png_as_jpg": [
+   "img_02235.jpg",
+   "img_01624.jpg",
+   "img_02486.jpg",
+   "img_00479.jpg",
+   "img_01581.jpg",
+   "img_00654.jpg",
+   "img_02434.jpg",
+   "img_00831.jpg",
+   "img_01393.jpg",
+   "img_00208.jpg"
+  ],
+  "tiny_32px": [
+   "img_02311.png",
+   "img_01027.png",
+   "img_01432.png",
+   "img_01950.png",
+   "img_00830.png",
+   "img_02823.png",
+   "img_02214.png",
+   "img_02209.png",
+   "img_01788.png",
+   "img_00251.png",
+   "img_01645.png",
+   "img_00947.png",
+   "img_01435.png",
+   "img_00722.png",
+   "img_02269.png",
+   "img_01395.png",
+   "img_01865.png",
+   "img_01087.png",
+   "img_02848.png",
+   "img_00759.png",
+   "img_02190.png",
+   "img_01815.png",
+   "img_01222.png",
+   "img_00365.png",
+   "img_00551.png",
+   "img_01055.png",
+   "img_00881.png",
+   "img_01515.png",
+   "img_01854.png",
+   "img_00564.png",
+   "img_01273.png",
+   "img_02599.png",
+   "img_00617.png",
+   "img_02104.png",
+   "img_00040.png",
+   "img_00915.png",
+   "img_02409.png",
+   "img_02397.png",
+   "img_02863.png",
+   "img_00414.png"
+  ],
+  "huge_1024px": [
+   "img_02224.png",
+   "img_02391.png",
+   "img_01290.png",
+   "img_02279.png",
+   "img_00100.png",
+   "img_02025.png",
+   "img_01397.png",
+   "img_00972.png",
+   "img_01595.png",
+   "img_02875.png"
+  ],
+  "truncated_corrupt": [
+   "img_02272.png",
+   "img_00800.png",
+   "img_00511.png",
+   "img_00034.png",
+   "img_01080.png",
+   "img_01389.png",
+   "img_02330.png",
+   "img_01037.png",
+   "img_01401.png",
+   "img_02659.png",
+   "img_00712.png",
+   "img_02778.png"
+  ]
+ },
+ "task": "single-label image classification, 6 classes; honest evaluation = production_batch",
+ "n_images": 3086,
+ "n_production": 600,
+ "group_key": "capture_session (3-5 photos of the same physical object per session); random splits leak",
+ "near_duplicate_note": "near-duplicates carry new session ids: only content-based dedup (hash / embeddings) finds them",
+ "rare_class": "hexagon (~3%)",
+ "shortcut": {
+  "cue": "white corner watermark",
+  "train_rate_by_class": {
+   "circle": 0.042,
+   "square": 0.047,
+   "triangle": 0.057,
+   "star": 0.853,
+   "cross": 0.043,
+   "hexagon": 0.045
+  },
+  "production_rate": "15% at random across classes",
+  "expected_symptom": "star recall/precision collapses on production if the model uses the watermark"
+ },
+ "domain_shift": "production_batch is darker, lower contrast, blurred, warmer, busier backgrounds (new camera)",
+ "label_noise_rate": 0.04
+}

@@ -1,0 +1,39 @@
+﻿  EuroSAT.zip: 52 / 94 MB
+downloaded EuroSAT.zip (94.3 MB) in 9s
+eurosat images: 27000
+  images.tar.gz: 52 / 792 MB
+  images.tar.gz: 105 / 792 MB
+  images.tar.gz: 157 / 792 MB
+  images.tar.gz: 210 / 792 MB
+  images.tar.gz: 262 / 792 MB
+  images.tar.gz: 315 / 792 MB
+  images.tar.gz: 367 / 792 MB
+  images.tar.gz: 419 / 792 MB
+  images.tar.gz: 472 / 792 MB
+  images.tar.gz: 524 / 792 MB
+  images.tar.gz: 577 / 792 MB
+  images.tar.gz: 629 / 792 MB
+  images.tar.gz: 682 / 792 MB
+  images.tar.gz: 734 / 792 MB
+  images.tar.gz: 786 / 792 MB
+downloaded images.tar.gz (791.9 MB) in 100s
+downloaded annotations.tar.gz (19.2 MB) in 6s
+pets images: 7390
+python.exe : 
+At line:1 char:371
++ ... ist Skill"; & "C:\Users\apoor\anaconda3\envs\cv-skills\python.exe" ev ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF 
+Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:05,  1.12it/s]
+Fetching 7 files:  57%|█████▋    | 4/7 [00:03<00:02,  1.21it/s]
+Fetching 7 files:  71%|███████▏  | 5/7 [00:08<00:03,  1.98s/it]
+Fetching 7 files:  86%|████████▌ | 6/7 [00:13<00:02,  2.76s/it]
+Fetching 7 files: 100%|██████████| 7/7 [00:15<00:00,  2.59s/it]
+Fetching 7 files: 100%|██████████| 7/7 [00:15<00:00,  2.17s/it]
+construction-safety files: 17 ['.gitattributes', 'dataset.tar.gz', 'dataset_info.json', 'README.md', 'test-00000-of-00001-2a010722bb743ffa.parquet', 'train-00000-of-00001-363ce03539eb0073.parquet', 'validation-00000-of-00001-fc7c3e3c4e5acfa5.parquet', '.gitignore', 'CACHEDIR.TAG', '.gitattributes.metadata']
+ALL DONE

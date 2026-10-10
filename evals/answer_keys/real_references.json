@@ -1,0 +1,19 @@
+{
+ "oxford_pets": {
+  "reference": "vit_small_patch14_dinov2.lvd142m frozen CLS features, 224 px centre crop, logistic regression (C=1.0 by 5-fold CV on pool)",
+  "pool_cv_accuracy_by_C": {
+   "0.1": 0.9601,
+   "0.3": 0.9625,
+   "1.0": 0.9641,
+   "3.0": 0.962
+  },
+  "benchmark_accuracy": 0.9518,
+  "benchmark_accuracy_wilson95": [
+   0.9443,
+   0.9582
+  ],
+  "benchmark_macro_f1": 0.9509,
+  "n_benchmark": 3669,
+  "computed": "2026-09-28"
+ }
+}

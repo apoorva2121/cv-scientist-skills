@@ -1,0 +1,34 @@
+{
+  "skill_name": "cv-scientist",
+  "notes": "Synthetic datasets from evals/make_datasets.py with planted defects. Answer keys in evals/answer_keys/ are for grading only and must never be shown to an agent under test. Test agents run on CPU (no CUDA) in the conda env cv-skills.",
+  "evals": [
+    {
+      "id": 0,
+      "name": "eval-cls-shortcut-shift",
+      "prompt": "We photograph objects on a production line and need to classify them into six types. The data is at <DATASETS>/shapes_classification: images/ plus metadata.csv (file, label, capture_session, camera_id). We are about to deploy on a new camera; production_batch/ with production_batch.csv is a labelled sample from that camera. Build the best classifier you can and tell me honestly how it will perform in production.",
+      "expected_output": "Code, report, decision log. Corrupt files, EXIF orientation, colour modes found and handled in the serving pipeline; group split by capture_session plus content-based near-duplicate detection; exact duplicates with conflicting labels and label noise flagged; rare class handled with per-class metrics; watermark shortcut found and addressed; performance reported on production_batch with the domain gap explained; baselines, several model families, and an ensemble compared on the same validation images with a paired comparison; test scored once; metrics with bootstrap intervals.",
+      "files": ["datasets/shapes_classification"]
+    },
+    {
+      "id": 1,
+      "name": "eval-det-annotation-defects",
+      "prompt": "<DATASETS>/shapes_detection has images/ and annotations.json in COCO format. We need a detector for circles, squares and triangles. Build the best detector you can and tell me what performance to expect.",
+      "expected_output": "Code, report, decision log. Annotation validation finds out-of-bounds and zero-size boxes, undefined category ids, JSON images missing on disk, wrong image sizes, corner-format (xyxy) boxes, duplicate boxes and the unused category; missing annotations checked for; split grouped by sequence; tiny objects handled (resolution or tiling screened, AP by size reported); COCO mAP@[.5:.95], AP50, per-class and per-size metrics with image-bootstrap intervals; post-processing (NMS / score threshold / WBF) screened; an ensemble or TTA compared with the single best model.",
+      "files": ["datasets/shapes_detection"]
+    },
+    {
+      "id": 2,
+      "name": "eval-real-pets-finegrained",
+      "prompt": "We have photos of 37 cat and dog breeds at <REAL>/oxford_pets: pool/images plus pool/labels.csv (file, breed, species). benchmark/ (same layout) is our fixed evaluation set: use it only once, for the final score. Build the most accurate breed classifier you can with the compute available (CPU only) and tell me the accuracy to expect.",
+      "expected_output": "Real photos, fine-grained. Audit (duplicates, formats), grouped/dedup-aware validation inside the pool, strong pretrained features, a linear-probe baseline and at least one stronger approach, an ensemble tested, per-class metrics and the most-confused breed pairs, benchmark scored once with a confidence interval, compute choices justified.",
+      "files": ["real_prepared/oxford_pets"]
+    },
+    {
+      "id": 3,
+      "name": "eval-real-det-construction",
+      "prompt": "<REAL>/construction_safety has site photos with COCO boxes for helmets, vests and people: pool/images with pool/annotations.json for development, and benchmark/ (same layout) as our fixed evaluation set, used once at the end. Build the best detector you can with the compute available (CPU only) and tell me the performance to expect.",
+      "expected_output": "Real detection. Annotation audit (unused parent category, invalid boxes), rare class (no-helmet) and small objects recognised, a permissively licensed pretrained detector, baseline vs improved configuration, post-processing screened, TTA or ensemble tested, COCO mAP/AP50 per class and size with image-bootstrap intervals on the benchmark, compute choices justified.",
+      "files": ["real_prepared/construction_safety"]
+    }
+  ]
+}
